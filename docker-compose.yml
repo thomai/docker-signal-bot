@@ -1,0 +1,9 @@
+version: '3.5'
+
+services:
+  signalbot:
+    restart: unless-stopped
+    build:
+      context: .
+    volumes:
+      - ./docker/signal_config/:/app/signal_config
